@@ -1,10 +1,10 @@
 <?php
 /**
-* Template Name: Recovery Reza
+* Template Name: Recovery - RJZ
 *
 * @package WordPress
-* @subpackage Twenty_Fourteen
-* @since Twenty Fourteen 1.0
+* @subpackage RJZ
+* @since 1.0
 */
  get_header(); 
 
@@ -31,17 +31,17 @@
 <div class="row">
     <div class="col-md-4"></div>
     <div class="col-lg-4 col-md-4" style="background: #fff;padding: 15px;border-radius: 12px;">
-        <h3 style="padding: 10px;border-bottom: 1px solid #ccc;text-align: center;">بازیابی لینک دانلود</h3>
+        <h3 style="padding: 10px;border-bottom: 1px solid #ccc;text-align: center;">Recovery for Download Link</h3>
   <div class="form-group">
       <br>
-    <input type="text" class="form-control" id="exampleInputorder" placeholder="شماره سفارش" style="width: 97%;padding: 8px;">
+    <input type="text" class="form-control" id="exampleInputorder" placeholder="Order ID without #" style="width: 97%;padding: 8px;">
     <br><br>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ایمیل" style="width: 97%;padding: 8px;">
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" style="width: 97%;padding: 8px;">
     <br><br>
-    <small id="emailHelp" class="form-text text-muted">شماره سفارش به ایمیل و موبایل(از طریق پیامک) ارسال شده است.</small>
+    <small id="emailHelp" class="form-text text-muted">You received purchase order ID by email.</small>
   </div>
   <br><div class="row" style="text-align:center;">
-  <a id="clickadder" style="cursor: pointer;background: #3131d5;color: #fff;padding:10px;border-radius:15px;margin:auto;width:97%;display: block;" >دریافت لینک دانلود</a>
+  <a id="clickadder" style="cursor: pointer;background: #3131d5;color: #fff;padding:10px;border-radius:15px;margin:auto;width:97%;display: block;" >Recover </a>
   </div>
 </div><div class="col-md-4"></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -52,7 +52,7 @@ $(document).ready(function(){
     if($("#exampleInputorder").val().length>0 && $("#exampleInputEmail1").val().length>5)
     {
           $("#clickadder").hide();
-      $("#ajax_result").html("<div><h3>شکیبا باشید!!!</h3></div>");  
+      $("#ajax_result").html("<div><h3>Processing!!!</h3></div>");  
                   $("#ajax_result").animate({
                     scrollTop: $("#ajax_result").offset().top
                     }, 2000);
@@ -68,7 +68,7 @@ $(document).ready(function(){
                     }, 2000);
               }
               else{
-                  $("#ajax_result").html("<div><h3>هیچی یافت نشد</h3></div>");
+                  $("#ajax_result").html("<div><h3>:( Nothing Found!!!</h3></div>");
                   $("#ajax_result").animate({
                   scrollTop: $("#ajax_result").offset().top
                     }, 2000);
@@ -76,7 +76,7 @@ $(document).ready(function(){
             }
             ,error: function () {
                 console.log("error"); 
-                $("#ajax_result").html("<div><h3>خطا! 3862</h3></div>"); 
+                $("#ajax_result").html("<div><h3>Error: 3862! </h3></div>"); 
                 $("#ajax_result").animate({
                 scrollTop: $("#ajax_result").offset().top}, 2000);
             }
@@ -84,7 +84,7 @@ $(document).ready(function(){
     }
     else
     {
-        $("#ajax_result").html("<div><h3>اطلاعات را کامل وارد کنید</h3></div>"); 
+        $("#ajax_result").html("<div><h3>All fields are required.</h3></div>"); 
         $("#ajax_result").animate({
         scrollTop: $("#ajax_result").offset().top}, 2000);
     }

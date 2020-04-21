@@ -24,7 +24,7 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
      $downloads = $_product->get_files();
     
      foreach( $downloads as $key => $each_download ) {
-      echo '<div style="border:1px solid #ccc;display:block;padding:15px;">'.$_product->get_title().':   <a target="_blank" style="cursor: pointer;background: #3131d5;color: #fff;padding:10px;border-radius:15px;margin:auto;" href="'.$each_download["file"].'">دانلود</a></div>';
+      echo '<div style="border:1px solid #ccc;display:block;padding:15px;">'.$_product->get_title().':   <a target="_blank" style="cursor: pointer;background: #3131d5;color: #fff;padding:10px;border-radius:15px;margin:auto;" href="'.$each_download["file"].'">Download</a></div>';
      }
      
  }
@@ -32,7 +32,7 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
   echo("is not a valid email address");
 }}
      else{
-         echo '<h3 style="border:1px solid #ccc;display:block;padding:15px;">موردی یافت نشد!</h3>';
+         echo '<h3 style="border:1px solid #ccc;display:block;padding:15px;">:( Nothing Found!!!</h3>';
      }
 }
 ?>
