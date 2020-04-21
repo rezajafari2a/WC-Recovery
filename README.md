@@ -9,6 +9,7 @@ It's based on Jquery and Bootstrap 3.
 Follow these steps:
 
 1.These file should be added to your active theme folder. 
+
 Persian version files:
 * single-ajaxrecovery-en.php
 * single-recover-en.php
