@@ -21,8 +21,9 @@ Follow these steps:
 
 Note2: The Recovery form can be more secure with captcha.
 
+
 RJZ simple captcha:
 https://github.com/rezajafari2a/captcha
 
 # Result:
-
+![picture alt](https://raw.githubusercontent.com/rezajafari2a/WC-Recovery/master/Recovery.PNG "Woocommerce download link recovery")
