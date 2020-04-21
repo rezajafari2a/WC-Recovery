@@ -8,7 +8,14 @@ It's based on Jquery and Bootstrap 3.
 # How to Use
 Follow these steps:
 
-1.These file should be added to your active theme folder. For Persian language, cut files in 'fa' folder and copy on root of your active theme. For English language, cut files in 'fa' folder and copy on root of your active theme. 
+1.These file should be added to your active theme folder. 
+Persian version files:
+* single-ajaxrecovery-en.php
+* single-recover-en.php
+
+English version files:
+* single-ajaxrecovery-fa.php
+* single-recover-fa.php
 
 2. Then go to wordpress panel and add two new pages with these templates name:
 "Ajaxrecovery Reza" (Ajax request form)
